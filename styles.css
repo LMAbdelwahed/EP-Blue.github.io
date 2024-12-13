@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap');
+
+:root{
+	--skyBlue:#7BDFF2;
+	--powderBlue:#e0fbfc;
+	--darkNavy:#2d3142;
+	--eggShell:#EFF7F6;
+}
+*{
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: Playfair;
+}
+a, button{
+	cursor: pointer;
+}
+.container-fluid{
+	padding: 0;
+}
+.container{
+	padding: 0;
+}
+.card{
+	border-radius: 0;
+	border: none;
+	background-color: transparent;
+}
+.card-img{
+	border-radius: 0;
+}
+body{
+	background-color: var(--powderBlue);
+}
+section{
+	background-color: var(--eggShell);
+	padding-bottom: 30px;
+}
+hr{
+	width: 100%;
+	color: var(--darkNavy);
+	margin: 0;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--darkNavy);
+  border: 1px solid var(--powderBlue);
+}
+#btn-back-to-top i{
+	color: var(--eggShell);
+}
+.nav-link{
+	color: var(--darkNavy);
+	font-size: 18px;
+}
+.nav-link:hover{
+	color: var(--skyBlue);
+	transition: 0.4s ease;
+}
+#Banner img{
+	max-height: 400px;
+	object-fit: cover;
+}
+.card-link i{
+	color: var(--skyBlue);
+	font-size: 18px;
+}
+.card-link i:hover{
+	color: var(--darkNavy);
+	transition: 0.4s ease;
+}
+#customerServices .col, #partners .col{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#customerServices .card, #partners img{
+	width: 120px;
+}
+#plans{
+	padding: 20px;
+}
+#plans h5{
+	top: 88%;
+	padding: 10px; 
+	background-color: rgba(45, 49, 66, 0.25); 
+	color: var(--eggShell);
+}
+
+#midView{
+	display: none;
+}
+.my-btn{
+	position: absolute;
+	background-color: var(--darkNavy);
+	bottom: 10%;
+	left: 89%;
+	color: var(--eggShell);
+}
+.my-btn:hover{
+	border: 1px solid var(--darkNavy);
+	color: var(--darkNavy);
+	background-color: transparent;
+	transition: 0.4s ease;
+}
+#Contact{
+	background-color: var(--darkNavy);
+}
+#Contact h5{
+	color: var(--eggShell);
+	font-family: Satisfy;
+	font-size: 20px;
+}
+#Contact .card{
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 20px;
+}
+.list-group-item{
+	background-color: transparent;
+	border: none;
+}
+.list-group-item a{
+	text-decoration: none;
+	color: var(--eggShell);
+}
+.list-group-item a:hover{
+	text-decoration: underline;
+	transition: 0.4s ease;
+}
+.form-btn{
+	background-color: var(--eggShell);
+	border: 1px solid var(--eggShell);
+	color: var(--darkNavy);
+}
+.form-btn:hover{
+	border: 1px solid var(--eggShell);
+	color: var(--eggShell);
+	background-color: transparent;
+	transition: 0.4s ease;
+}
+footer{
+	background-color: var(--darkNavy);
+	padding: 5px 0;
+	color: var(--eggShell);
+	font-size: 11px;
+	text-align: center;
+	border-top: 1px solid var(--powderBlue);
+}
+
+@media screen and (max-width:1200px){
+	.my-btn{
+		position: static;
+	}
+	#midView{
+		display: flex;
+	}
+	#wideView{
+		display: none;
+	}
+	.card-img-top{
+		border-radius: 0;
+	}
+}
+
+@media screen and (max-width:1000px){
+	#plans h5{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:780px){
+	#plans h5{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.nav-link{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 460px){
+	#plans h5{
+		font-size: 14px;
+		top: 86%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	#plans h5{
+		font-size: 12px;
+		top: 84%;
+	}
+}
+
+
+
